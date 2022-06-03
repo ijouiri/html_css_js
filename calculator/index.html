@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+
+    <label for="value1">number 1</label>
+    <input id="value1">
+    <br>
+    <label for="value2">number 2</label>
+    <input id="value2">
+    <br>
+    <select id="opp">
+      <option value="+">add</option>
+      <option value="-">min</option>
+      <option value="/">div</option>
+      <option value="*">mul</option>
+    </select> <br>
+  </form>
+  <button type="submit" onclick="calc()">Calculate</button>
+
+  <div id="result"></div>
+  
+</body>
+<script src="scripts.js"></script>
+</html>

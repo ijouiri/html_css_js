@@ -1,0 +1,156 @@
+body{
+  text-align: center;
+}
+
+:root{
+  --blueUI : #00BBFF;
+  --redUI: #FF003D;
+  --purpleUI: #8100FF;
+  --orangeUI: #FF7D00;
+  --greenUI: #35FF00;
+}
+
+.container{
+  display: inline-block;
+  box-shadow: 0px 4px 8px 0px grey;
+  width: 70%;
+  margin-bottom: 1%;
+}
+
+.container .form-group{
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1.5em;
+}
+
+label{
+  color: green;
+}
+
+.form-group .input-form{
+  display: inline-block;
+  width: 70%;
+  height: 1.5rem;
+  margin-bottom: 5%;
+  border-radius: 0.25rem;
+  border: 2.5px solid #B1B1B1;
+  outline: none;
+}
+
+.input-form:focus{
+  border-color: var(--blueUI);
+
+}
+
+span{
+  padding: 10px;
+}
+
+.followers{
+  background-color: var(--greenUI);
+
+}
+.following{
+  background-color: var(--orangeUI);
+
+}
+
+.repos{
+  background-color: var(--purpleUI);
+
+}
+
+.gists{
+  background-color: var(--redUI);
+
+}
+
+
+.btn {
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.profile{
+  display: flex;
+}
+
+.img-profile{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.img-profile button{
+  border: 1px solid transparent;
+  color: white;
+  height: 2.5em;
+  width: 50%;
+  background-color: var(--blueUI);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.img-profile a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.img-profile img{
+  border-radius: 50%;
+}
+
+.profile-info{
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+
+.info{
+  margin-right: 5%;
+  margin-top: 5%;
+  box-shadow: 0px 0px 3px 0px gray;
+}
+
+.info ul{
+  line-height: 3em;
+}
+.info ul{
+  text-align: left;
+  list-style: none;
+}
+
+.col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: baseline;
+}
+
+.repo-info{
+  margin-right: 10px;
+  text-align: right;
+}
+.repo-info button{
+  font-size: 20px;
+}
+
+.forks{
+  background-color: var(--blueUI);
+
+}
+.stars{
+  background-color: var(--orangeUI);
+
+}
+.watching{
+  background-color: var(--redUI);
+
+}

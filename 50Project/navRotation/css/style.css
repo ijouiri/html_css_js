@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "sans-serif";
+  overflow-x: hidden;
+  background-color: #3E3E3E;
+  color: #8B8B8B;
+}
+
+.container{
+  background-color:#FBFBFB;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container.show-nav{
+  transform: rotate(-20deg);
+}
+
+.container.show-nav .circle{
+  transform: rotate(-70deg);
+}
+
+.container.show-nav + nav ul li{
+  transform: translateX(0%);
+  transition-delay: 0.2s;
+}
+
+.circle-container{
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.content{
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.content img{
+  max-width: 20%;
+}
+
+
+
+.circle{
+  background-color: hsl(32, 100%, 50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  border: 0;
+  height: 100px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.circle .open{
+  left: 60%;
+}
+
+.circle .close{
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 10px;
+  z-index: 10;
+  text-transform: uppercase;
+}
+nav ul li {
+  margin: 20px 0px;
+  transform: translateX(-150%);
+  transition: transform .2s ease-in;
+}
+nav ul li + li{
+  margin-left: 20px;
+}
+
+nav ul li + li + li {
+  margin-left: 40px;
+}
+
+nav ul li i {
+  margin-right: 10px;
+}

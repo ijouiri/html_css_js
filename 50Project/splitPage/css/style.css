@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --left-bg-color: rgba(10, 10, 10, 0.4);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "sans-serif";
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  background-color: #797979;
+  height: 100vh;
+}
+
+.split{
+  position: absolute;
+  width: 50%;
+}
+
+.split.left{
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("https://unbox.ph/wp-content/uploads/2021/04/Huawei-MateBook-D15-05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right{
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("https://www.apple.com/v/macbook-pro-13/j/images/overview/hero_endframe__bsza6x4fldiq_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.split h1{
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.split .btn{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 0 , 0, 1);
+  width: 5.4rem;
+}

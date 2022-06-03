@@ -1,0 +1,30 @@
+#error{
+	display: none;
+}
+
+.results{
+	display: none;
+	transition: display 0.3s;
+}
+
+/* #loader{ */
+/*   width: 100px; */
+/*   height: 100px; */
+/*   margin: 2em auto; */
+/*   border: 2px solid #b3b7e2; */
+/*   border-radius: 50%; */
+/*   border-top-color: #191d3a; */
+/*   animation: spin 1s ease-in-out infinite; */
+/*   -webkit-animation: spin 1s ease-in-out infinite; */
+/* } */
+
+/* @keyframes spin { */
+/*   to { */
+/*     -webkit-transform: rotate(360deg); */
+/*   } */
+/* } */
+/* @-webkit-keyframes spin { */
+/*   to { */
+/*     -webkit-transform: rotate(360deg); */
+/*   } */
+/* } */

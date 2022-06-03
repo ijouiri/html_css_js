@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>To-do list application</title>
+</head>
+<body>
+  <section class="container">
+
+        <h1>To-Do List</h1>
+        <h3>New Task</h3>
+      <form id="add" class="input">
+        <input id="task" type="text" placeholder="Enter the task" autocomplete="off" autofocus required><br>
+        <button type="submit">ADD</button>
+      </form>
+
+      <!-- <div class="add"> -->
+      <!--   <input type="text" placeholder="Enter the task" autocomplete="off" required><br> -->
+      <!--   <button>ADD</button> -->
+      <!-- </div> -->
+
+    <div class="remove">
+
+      <h2>Task list</h2>
+
+      <div class="filter">
+        <input type="text" class="input" placeholder="What are you searching for ?" autocomplete="off">
+      </div>
+
+      <div class="task-list">
+        <ul class="collection">
+        </ul>
+      </div>
+
+      <a class="clear-tasks" href=""><button>Clear Tasks</button></a>
+    </div>
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

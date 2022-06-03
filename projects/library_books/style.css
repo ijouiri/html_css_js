@@ -1,0 +1,82 @@
+body{
+	text-align: center;
+}
+
+.container{
+	margin: 60px 20%;
+	box-shadow: 0px 4px 8px 0px #775757;
+	padding: 20px;
+	border-radius: 0.24rem;
+}
+
+.group-form{
+	display: flex;
+	flex-direction:column;
+	text-align: left;
+}
+
+.input{
+	display: inline-block;
+	width: 50%;
+	height: 1.8em;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius:0.25rem;
+	outline: none;
+}
+
+.input:focus{
+	border: 2px solid #7BFF00;
+}
+
+.btn{
+	cursor: pointer;
+	display: inline-block;
+	width: 30%;
+	height: 1.5rem;
+	background-color: #00C2FF;
+	outline: none;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+}
+.fa-trash{
+	color:#FF0000;
+	cursor: pointer;
+}
+
+hr{
+	margin: 30px 0px;
+}
+
+table, td, tr, tbody, thead{
+	padding: 10px;
+}
+
+thead{
+	margin-left:100px;
+	border-bottom:1px solid #00C2FF;
+}
+
+tbody, thead{
+	text-align: left;
+}
+
+table{
+	border-radius: 0.25rem;
+	box-shadow: 0px 4px 8px #00C2FF;
+	width:100%;
+	border-collapse: collapse;
+}
+
+.alert{
+	border: 1px solid transparent;
+	margin-bottom: 2rem;
+}
+
+.error{
+	border-color: red;
+}
+
+.success{
+	border-color: #7BFF00;
+}
