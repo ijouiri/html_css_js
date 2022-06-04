@@ -5,7 +5,9 @@
 }
 
 :root{
-  --left-bg-color: rgba(10, 10, 10, 0.4);
+  --bg-color : rgba(43, 43, 43, 0.8);
+  --hover-left: 85%;
+  --hover-right: 15%;
 }
 
 body {
@@ -23,6 +25,7 @@ body {
 .split{
   position: absolute;
   width: 50%;
+  overflow: hidden;
 }
 
 .split.left{
@@ -34,6 +37,15 @@ body {
   background-size: cover;
 }
 
+.split.left::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+
 .split.right{
   right: 0;
   width: 50%;
@@ -43,11 +55,19 @@ body {
   background-size: cover;
 }
 
+.split.right::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+}
 
 .split h1{
+  font-family: "Poppins", "sans-serif";
   color: white;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -55,9 +75,52 @@ body {
 
 .split .btn{
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 0 , 0, 1);
-  width: 5.4rem;
+  color: white;
+  background-color: transparent;
+  border: white solid 0.2rem;
+  font-size: 24px;
+  padding: 1rem;
+  width: 14rem;
+  cursor: pointer;
+}
+
+.split .btn:hover{
+  background-color: rgba(29, 255, 0, 0.1);
+}
+
+.hover-left .left{
+  width: var(--hover-left);
+}
+
+.hover-left .right{
+  width: var(--hover-right);
+}
+
+.hover-right .right{
+  width: var(--hover-left);
+}
+
+.hover-right .left{
+  width: var(--hover-right);
+}
+
+.left , .right {
+  transition: width 1s;
+}
+
+
+@media (max-width: 800px){
+  .split h1 {
+    font-size: 12px;
+    top: 30%;
+  }
+
+  .split .btn {
+    width: 10rem;
+    padding: 1rem;
+  }
+
 }
